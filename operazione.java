@@ -25,7 +25,10 @@ public class operazione {
                 risultato = n % m;
                 output+= risultato;
                 break;
-
+            case "radice":
+                risultato = Math.sqrt(n);
+                output += risultato;
+                break;
             default:
                 output += "Il segno è errato";
                 break;

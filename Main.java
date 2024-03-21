@@ -6,19 +6,13 @@ public class Main {
         String s = "";
         do {
             s = Lettura.Segno("Dimmi se vuoi sommare, dividere, moltiplicare o fare la differenza \n Se vuoi fare la radice quadrata di un numero scrivere 'radice'");
-            if (s.equals("radice")){
-                Radice.radice(s,n);
-            }
+        }  while (!s.equals("*") && !s.equals("+") && !s.equals("/") && !s.equals("-") && !s.equals("radice")) ;
+
+        if (s.equals("radice")) {
+           operazione.op(s,n,0);
+        } else {
+            double m = Lettura.Lettura2("Inserire il secondo numero");
+            operazione.op(s, n, m);
         }
-
-        while (!s.equals("*") && !s.equals("+") && !s.equals("/") && !s.equals("-"));
-        switch (s){
-            case "radice":
-                break;
-        }
-        double m = Lettura.Lettura2("Inserire il secondo numero");
-        operazione.op(s,n,m);
-
-
     }
 }
