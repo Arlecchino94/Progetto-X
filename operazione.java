@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class operazione {
-    public static void op(String s, int n, int m) {
+    public static void op(String s, double n, double m) {
         double risultato = 0;
         String output = "";
         switch (s) {
@@ -10,7 +10,7 @@ public class operazione {
                 output += risultato;
                 break;
             case "/":
-                risultato = (double) n / m;
+                risultato =  n / m;
                 output += risultato;
                 break;
             case "+":
