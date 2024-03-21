@@ -10,5 +10,7 @@ public class Main {
         while (!s.equals("*") && !s.equals("+") && !s.equals("/") && !s.equals("-"));
         int m = Lettura.Lettura("Inserire il secondo numero");
         operazione.op(s,n,m);
+
+
     }
 }

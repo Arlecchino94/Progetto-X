@@ -21,6 +21,10 @@ public class operazione {
                 risultato = n - m;
                 output += risultato;
                 break;
+            case "%":
+                risultato = n % m;
+                output+= risultato;
+                break;
 
             default:
                 output += "Il segno è errato";
